@@ -3,7 +3,6 @@ import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View, Modal } fr
 import Slider from '@react-native-community/slider';
 import { ModalPassword } from '../../components/modal/index';
 
-
 var screen = Dimensions.get('window');
 
 export  function Home() {
@@ -46,7 +45,7 @@ export  function Home() {
           Generate Passsword
         </Text>
       </TouchableOpacity>
-      <Modal visible={showModal} animationType='fade'>
+      <Modal visible={showModal} animationType='slide'>
           <ModalPassword passWord={passswordValue} handleClose={()=>setshowModal(false)}/>
       </Modal>
     </View>
